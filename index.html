@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Nitin Kanade | Senior SFCC Developer & eCommerce Specialist</title>
+    <meta name="description" content="Portfolio of Nitin Kanade, a Senior Salesforce Commerce Cloud (SFCC) Developer and Indie Tool Builder based in Pune, India. Expert in SFRA, OCAPI, and full-stack web development.">
+    <meta name="keywords" content="Nitin Kanade, SFCC Developer, Salesforce Commerce Cloud, SFRA, eCommerce, Full Stack Developer, Pune, Indie Hacker">
+    <meta name="author" content="Nitin Kanade">
+    <link rel="canonical" href="https://nitinkanade.com"> <meta property="og:type" content="profile">
+    <meta property="og:title" content="Nitin Kanade - Senior SFCC Developer">
+    <meta property="og:description" content="Senior SFCC Developer with 3+ years of experience building scalable eCommerce solutions.">
+    <meta property="og:url" content="https://nitinkanade.com">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nitin Kanade",
+      "jobTitle": "Senior Salesforce Commerce Cloud Developer",
+      "url": "https://nitinkanade.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/nitinkanade1",
+        "https://blog.ni18.in/",
+        "https://online-tools.ni18.in/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Pune",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "India"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "MET CDAC, Mumbai"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "SRTMUN"
+        }
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Appendd Digital Solutions"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #0070d2; /* Salesforce Blue-ish */
+            --secondary-color: #0f172a;
+            --text-color: #334155;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --container-width: 1100px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 60px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 30px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        /* Header / Hero */
+        header {
+            background-color: var(--card-bg);
+            padding: 80px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.2rem;
+            color: #64748b;
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
+
+        .hero-content p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* About Grid */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        @media(min-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .highlights-list {
+            list-style: none;
+        }
+
+        .highlights-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .highlights-list li::before {
+            content: '✔';
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Tech Stack */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .tech-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .tech-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #f1f5f9;
+            padding-bottom: 8px;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background-color: #e0f2fe;
+            color: #0369a1;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Projects */
+        .project-card {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 25px;
+            margin-bottom: 25px;
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .project-card h3 {
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+
+        .project-link {
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        /* Experience */
+        .timeline {
+            position: relative;
+            max-width: 100%;
+        }
+
+        .job {
+            background: var(--card-bg);
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+        .job-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+
+        .company {
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        .date {
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        .project-list {
+            margin-top: 15px;
+        }
+
+        .project-item {
+            margin-bottom: 15px;
+        }
+
+        .project-item h4 {
+            font-size: 1rem;
+            color: #334155;
+            margin-bottom: 5px;
+        }
+
+        .project-item ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            color: #475569;
+        }
+
+        /* Education & Interests */
+        .edu-flex {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .info-box {
+            flex: 1;
+            min-width: 250px;
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #cbd5e1;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container hero-content">
+            <h1>Hi, I’m Nitin Kanade <span aria-hidden="true">👋</span></h1>
+            <div class="subtitle">Senior Salesforce Commerce Cloud (SFCC) Developer | eCommerce Specialist | Indie Tool Builder</div>
+            <p>
+                SFCC Certified Developer with <strong>3+ years of experience</strong> building scalable, high-performance eCommerce solutions. 
+                I also run independent tech platforms used by real users.
+            </p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/nitinkanade1" target="_blank" rel="noopener noreferrer" class="btn">LinkedIn Profile</a>
+                <a href="mailto:nitinkanade027@gmail.com" class="btn btn-outline">Email Me</a>
+                <a href="https://blog.ni18.in/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Read My Blog</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div>
+                    <p style="margin-bottom: 15px;">
+                        I am a Senior SFCC Developer at <strong>Appendd Digital Solutions</strong> in Pune, India. 
+                        My professional focus is on SFRA architecture, OCAPI/SCAPI integrations, and complex backend payment/analytics setups.
+                    </p>
+                    <p>
+                        Beyond the 9-to-5, I am a tech enthusiast who enjoys building real-world tools, writing technical blogs, and experimenting with SEO and performance optimization.
+                    </p>
+                </div>
+                <div>
+                    <ul class="highlights-list">
+                        <li>Expertise in <strong>SFRA architecture & customization</strong></li>
+                        <li>Experienced with <strong>OCAPI / SCAPI / Services</strong></li>
+                        <li>Payment integrations: <strong>CyberSource, CC Avenue, Razorpay</strong></li>
+                        <li>Analytics: <strong>Google Tag Manager (GTM), UET, SEO</strong></li>
+                        <li>Blogger & indie developer with live production apps</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="tech-grid">
+                <article class="tech-card">
+                    <h3>Salesforce Commerce Cloud</h3>
+                    <div class="tech-tags">
+                        <span class="tag">SFRA</span>
+                        <span class="tag">Business Manager</span>
+                        <span class="tag">OCAPI & SCAPI</span>
+                        <span class="tag">ISML</span>
+                        <span class="tag">Jobs & Services</span>
+                    </div>
+                </article>
+                <article class="tech-card">
+                    <h3>Frontend</h3>
+                    <div class="tech-tags">
+                        <span class="tag">JavaScript (ES6+)</span>
+                        <span class="tag">React</span>
+                        <span class="tag">jQuery</span>
+                        <span class="tag">AJAX</span>
+                        <span class="tag">HTML5 / CSS3</span>
+                    </div>
+                </article>
+                <article class="tech-card">
+                    <h3>Backend & Integrations</h3>
+                    <div class="tech-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Payment Gateways</span>
+                        <span class="tag">Avalara Tax</span>
+                        <span class="tag">Loop Returns</span>
+                        <span class="tag">Google Maps API</span>
+                    </div>
+                </article>
+                <article class="tech-card">
+                    <h3>Analytics & Tools</h3>
+                    <div class="tech-tags">
+                        <span class="tag">Google Tag Manager</span>
+                        <span class="tag">SEO Optimization</span>
+                        <span class="tag">Universal Event Tracking</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <div class="timeline">
+                <article class="job">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Senior SFCC Developer</div>
+                            <div class="company">Appendd Digital Solutions — Pune, India</div>
+                        </div>
+                        <div class="date">March 2022 – Present</div>
+                    </div>
+                    
+                    <div class="project-list">
+                        <div class="project-item">
+                            <h4>🤖 Business Manager AI Agent</h4>
+                            <ul>
+                                <li>Built an AI agent using <strong>Salesforce Agentforce APIs</strong>.</li>
+                                <li>Created custom Business Manager UI for merchant interactions regarding inventory and orders.</li>
+                            </ul>
+                        </div>
+                        <div class="project-item">
+                            <h4>🍳 Cookware eCommerce Platform</h4>
+                            <ul>
+                                <li>Implemented order processing using <strong>CyberSource Decision Manager</strong>.</li>
+                                <li>Upgraded Avalara Tax Cartridge and integrated Google reCAPTCHA.</li>
+                                <li>Fixed Apple Pay & PayPal issues and implemented UET via GTM.</li>
+                            </ul>
+                        </div>
+                        <div class="project-item">
+                            <h4>🔁 Loop Return – Custom Cartridge</h4>
+                            <ul>
+                                <li>Automated exchange order creation and return processing using OCAPI.</li>
+                            </ul>
+                        </div>
+                        <div class="project-item">
+                            <h4>🥤 Beverage & 💊 Multivitamin Stores</h4>
+                            <ul>
+                                <li>Built <strong>Single Page Checkout</strong> flows.</li>
+                                <li>Integrated CC Avenue and Razorpay payment gateways.</li>
+                                <li>Implemented location-based inventory and GTM analytics.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <h2 class="section-title">Indie Projects & Side Hustles</h2>
+            
+            <div class="project-card">
+                <h3>📝 Tech Blog</h3>
+                <a href="https://blog.ni18.in/" target="_blank" rel="noopener noreferrer" class="project-link">https://blog.ni18.in/</a>
+                <p>
+                    A platform for in-depth technical blogs focused on Salesforce Commerce Cloud (SFCC), JavaScript, and eCommerce performance. 
+                    Content is SEO-optimized and beginner-friendly, with several articles ranking for competitive keywords.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>🧰 Free Online Tools Platform</h3>
+                <a href="https://online-tools.ni18.in/" target="_blank" rel="noopener noreferrer" class="project-link">https://online-tools.ni18.in/</a>
+                <p>
+                    A growing collection of fast, serverless, browser-based tools. Features include AI tools, file converters, and utilities.
+                    <strong>Highlights:</strong> Fully client-side (no backend), no login required, and highly optimized for mobile and SEO.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" id="education-interests">
+            <div class="edu-flex">
+                <div class="info-box">
+                    <h2 class="section-title" style="font-size: 1.5rem;">Education</h2>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 15px;">
+                            <strong>PG-DAC (CDAC)</strong><br>
+                            MET CDAC, Mumbai (2019–2020)
+                        </li>
+                        <li>
+                            <strong>B.E. Mechanical Engineering</strong><br>
+                            SRTMUN (2014–2019)
+                        </li>
+                    </ul>
+                </div>
+                <div class="info-box">
+                    <h2 class="section-title" style="font-size: 1.5rem;">Interests</h2>
+                    <div class="tech-tags">
+                        <span class="tag">New SFCC Technologies</span>
+                        <span class="tag">Technical Blogging</span>
+                        <span class="tag">Building Web Tools</span>
+                        <span class="tag">Chess</span>
+                        <span class="tag">Box Cricket</span>
+                        <span class="tag">Badminton</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3>Connect With Me</h3>
+            <div class="contact-info">
+                <p>📍 Pune, Maharashtra, India</p>
+                <p>📧 <a href="mailto:nitinkanade027@gmail.com">nitinkanade027@gmail.com</a></p>
+            </div>
+            <div class="social-links" style="margin-top: 20px;">
+                <a href="https://www.linkedin.com/in/nitinkanade1">LinkedIn</a>
+                <a href="https://blog.ni18.in/">Blog</a>
+                <a href="https://online-tools.ni18.in/">Tools</a>
+            </div>
+            <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.7;">&copy; 2024 Nitin Kanade. Built based on README profile data.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

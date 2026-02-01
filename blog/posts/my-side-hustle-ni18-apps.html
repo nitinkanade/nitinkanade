@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Side Hustle: The ni18 Android App Ecosystem & Portfolio | Nitin Kanade</title>
+    <meta name="description"
+        content="Explore the personal portfolio of Nitin Sidram Kanade (ni18). Discover how I build offline-first Android apps for education, JEE prep, and Salesforce developers as my passion project.">
+    <meta name="keywords"
+        content="ni18, Android Apps, Offline-First, Education Apps, JEE Mock Test, MPSC Quiz, SFCC Tools, Nitin Kanade">
+    <meta name="author" content="Nitin Kanade">
+    <link rel="canonical" href="https://nitinkanade.github.io/nitinkanade/blog/posts/my-side-hustle-ni18-apps.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../../images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../../images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../../images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../../images/favicon/site.webmanifest" />
+
+    <style>
+        :root {
+            --primary-color: #0070d2;
+            --secondary-color: #0f172a;
+            --text-color: #334155;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --container-width: 800px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            padding: 20px 0;
+            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 40px;
+        }
+
+        .nav-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+
+        /* Article Styles */
+        article {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+        }
+
+        .content h2 {
+            color: var(--secondary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .content h3 {
+            color: var(--secondary-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .content h4 {
+            color: var(--secondary-color);
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .content ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "My Side Hustle: Building the ni18 Ecosystem",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://nitinkanade.github.io/nitinkanade/blog/posts/my-side-hustle-ni18-apps.html"
+      },
+      "datePublished": "2026-02-01",
+      "dateModified": "2026-02-01",
+      "author": {
+        "@type": "Person",
+        "name": "Nitin Kanade",
+        "url": "https://nitinkanade.github.io/nitinkanade/"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Nitin Kanade",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://nitinkanade.github.io/nitinkanade/images/favicon/favicon.svg"
+        }
+      },
+      "description": "Explore the personal portfolio of Nitin Sidram Kanade (ni18). Discover how I build offline-first Android apps for education, JEE prep, and Salesforce developers as my passion project.",
+      "keywords": "ni18, Android Apps, Offline-First, Education Apps, JEE Mock Test, MPSC Quiz, SFCC Tools, Nitin Kanade"
+    }
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-flex">
+            <a href="../" class="logo">← Back to Blog</a>
+            <a href="../../">Home</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <article>
+            <header style="background: none; padding: 0; box-shadow: none; border: none; margin-bottom: 20px;">
+                <h1>My Side Hustle: Building the ni18 Ecosystem</h1>
+                <div class="meta">Published on February 1, 2026 • By Nitin Kanade</div>
+            </header>
+
+            <div class="content">
+                <p><strong>Solving Real-World Problems Through Code</strong></p>
+                <p>
+                    In the world of software development, a resume tells you what I <em>can</em> do, but my side
+                    projects show you what I <em>love</em> to do.
+                </p>
+                <p>
+                    Welcome to the <strong>ni18 App Ecosystem</strong>—my personal laboratory and side hustle. Operating
+                    under the developer handle <strong>ni18</strong> (derived from my name, Nitin), I have built and
+                    maintained a portfolio of Android applications that serve a simple purpose: <strong>bridging
+                        gaps.</strong>
+                </p>
+                <p>
+                    Unlike my 9-to-5 work, which often focuses on enterprise constraints, these apps allow me to be the
+                    "Solver-Developer." I identify friction points in daily life—whether it's a student struggling with
+                    English grammar or a developer needing offline documentation—and I engineer a solution.
+                </p>
+                <p>
+                    Today, these apps act as a "utilitarian" ecosystem, serving thousands of users across three distinct
+                    sectors: <strong>Vernacular Education</strong>, <strong>Competitive Exam Prep</strong>, and
+                    <strong>Technical Tools</strong>.
+                </p>
+
+                <hr style="margin: 40px 0; border: 0; border-top: 1px solid #e2e8f0;">
+
+                <h2>My Core Philosophy: "Offline-First" & "Privacy-First"</h2>
+                <p>
+                    When I build for myself, I build for the user who doesn't have a perfect internet connection or
+                    unlimited data. This constraint has shaped my engineering philosophy.
+                </p>
+
+                <h3>1. The "Download Once, Use Forever" Standard</h3>
+                <p>
+                    I realized early on that my primary demographic (students in Tier-2/3 cities) cannot afford apps
+                    that constantly fetch data.
+                </p>
+                <ul>
+                    <li><strong>The Solution:</strong> I architect my apps to be self-contained. Whether it's the
+                        <em>JEE Mock Test</em> or <em>Physics Formulas</em>, the core content is bundled with the APK.
+                        This ensures that a student on a bus with zero signal can still study.</li>
+                    <li><strong>The Result:</strong> High retention rates. My apps become permanent utilities on users'
+                        devices because they are reliable.</li>
+                </ul>
+
+                <h3>2. Ethical Monetization & Data Privacy</h3>
+                <p>
+                    I monetize through AdMob to keep these tools free, but I draw a hard line on privacy.
+                </p>
+                <ul>
+                    <li><strong>No Data Harvesting:</strong> I do not collect emails, contacts, or location data.</li>
+                    <li><strong>No Third-Party Sales:</strong> I believe in "Sandboxed Utilities." What happens in the
+                        app, stays in the app. This builds trust, especially with parents allowing their children to use
+                        my grammar tools.</li>
+                </ul>
+
+                <hr style="margin: 40px 0; border: 0; border-top: 1px solid #e2e8f0;">
+
+                <h2>1. Bridging the Language Gap (Vernacular Tech)</h2>
+                <p>
+                    One of my biggest passions is using technology to democratize education. I noticed that most English
+                    learning apps are designed for Spanish or French speakers, not for the unique sentence structures of
+                    Indian languages.
+                </p>
+
+                <h3><a href="https://play.google.com/store/apps/details?id=com.nitinkanade.AEGIM">All English Grammar in
+                        Marathi (AEGIM)</a></h3>
+                <ul>
+                    <li><strong>The Hustle:</strong> This is my "Crown Jewel" with <strong>50,000+ downloads</strong>.
+                    </li>
+                    <li><strong>The Problem:</strong> Marathi students struggle with complex English syntax required for
+                        10th and 12th-grade board exams.</li>
+                    <li><strong>My Solution:</strong> I built a "Digital Guidebook" that uses the
+                        <strong>Grammar-Translation Method</strong>. I coded logic tables for "Voice Change" (Active to
+                        Passive) and "Direct-Indirect Speech" that map directly to the Marathi thought process. It’s not
+                        just an app; it’s a pocket tutor.</li>
+                </ul>
+
+                <h3><a href="https://play.google.com/store/apps/details?id=in.ni18.allenglishgrammarinhindi">All English
+                        Grammar in Hindi</a></h3>
+                <ul>
+                    <li><strong>The Goal:</strong> Scaling the model.</li>
+                    <li><strong>The Tech:</strong> I replicated the architecture of the Marathi app but adapted the
+                        linguistic logic for Hindi speakers, focusing on the shift from SOV (Hindi) to SVO (English)
+                        sentence structures.</li>
+                </ul>
+
+                <hr style="margin: 40px 0; border: 0; border-top: 1px solid #e2e8f0;">
+
+                <h2>2. Reducing Exam Anxiety (EdTech)</h2>
+                <p>
+                    In India, entrance exams are high-stakes events. Students need more than just books; they need
+                    simulation. I built these apps to provide a "safe failure" environment where students can test
+                    themselves before the big day.
+                </p>
+
+                <h3><a href="https://play.google.com/store/apps/details?id=in.ni18.jeemocktest">JEE Mock Test: PYQ &
+                        Prep</a></h3>
+                <ul>
+                    <li><strong>Why I built it:</strong> Engineering aspirants need to practice Previous Year Questions
+                        (PYQs). I digitized these papers and added an analytics layer.</li>
+                    <li><strong>The Feature I'm Proud Of:</strong> The "Chapter-wise Granularity." I wrote algorithms
+                        that allow students to filter questions by specific topics (e.g., <em>Optics</em> vs.
+                        <em>Thermodynamics</em>), enabling surgical study sessions.</li>
+                </ul>
+
+                <h3><a href="https://play.google.com/store/apps/details?id=in.ni18.mpsc.quiz">MPSC Quiz</a></h3>
+                <ul>
+                    <li><strong>The Niche:</strong> Serving Civil Service aspirants in Maharashtra.</li>
+                    <li><strong>The Tech:</strong> I focused on an "Ad-Light" experience with a backend that delivers
+                        detailed explanations for every answer, turning a quiz into a learning loop.</li>
+                </ul>
+
+                <h3><a href="https://play.google.com/store/apps/details?id=in.ni18.cdac.ccatprep">CDAC CCAT Prep</a>
+                </h3>
+                <ul>
+                    <li><strong>The Target:</strong> This was a personal project for the tech community. It targets
+                        graduates entering the C-DAC program, focusing on my own favorite topics: C Programming, Data
+                        Structures, and OS.</li>
+                </ul>
+
+                <hr style="margin: 40px 0; border: 0; border-top: 1px solid #e2e8f0;">
+
+                <h2>3. Tools for Professionals (Scratching My Own Itch)</h2>
+                <p>
+                    As a developer, I often found myself frustrated by fragmented documentation. Instead of complaining,
+                    I built tools to fix it. These apps show my expertise in the <strong>Salesforce Commerce Cloud
+                        (SFCC)</strong> ecosystem.
+                </p>
+
+                <h3><a href="https://play.google.com/store/apps/details?id=in.ni18.sfcc.doc">SFCC Doc</a></h3>
+                <ul>
+                    <li><strong>The Use Case:</strong> Official documentation is heavy and hard to navigate on mobile.
+                    </li>
+                    <li><strong>The Innovation:</strong> I created an offline viewer that indexes "Legacy Documentation"
+                        (SiteGenesis) and specific API Quotas. It’s a tool for maintenance engineers who need answers
+                        fast.</li>
+                </ul>
+
+                <h3><a href="https://play.google.com/store/apps/details?id=in.ni18.sfcc.quiz">SFCC Quiz</a></h3>
+                <ul>
+                    <li><strong>The Use Case:</strong> Helping peers drill rote facts for certification exams.</li>
+                </ul>
+
+                <hr style="margin: 40px 0; border: 0; border-top: 1px solid #e2e8f0;">
+
+                <h2>The Tech Stack</h2>
+                <p>
+                    These apps are built to be robust and low-maintenance.
+                </p>
+                <ul>
+                    <li><strong>Core:</strong> Native Android Development (Java/Kotlin).</li>
+                    <li><strong>Web Integration:</strong> My website, <a href="http://ni18.in">ni18.in</a>, serves as
+                        the command center, hosting web-based versions of tools like JSON Visualizers and Text
+                        Analyzers.</li>
+                    <li><strong>Maintenance:</strong> I actively maintain the codebase, recently updating the <em>JEE
+                            Mock Test</em> and <em>Physics Formulas</em> to target Android SDK 34/35, ensuring
+                        compliance with Google’s latest security standards.</li>
+                </ul>
+
+                <hr style="margin: 40px 0; border: 0; border-top: 1px solid #e2e8f0;">
+
+                <h2>Conclusion</h2>
+                <p>
+                    My "ni18" portfolio is more than just a collection of APKs. It is a testament to my belief that
+                    technology should be <strong>useful, accessible, and private</strong>.
+                </p>
+                <p>
+                    Whether I'm helping a rural student pass their English exam or assisting a senior developer in
+                    checking a legacy API, my side hustle allows me to make a tangible impact on the world, one download
+                    at a time.
+                </p>
+                <p>
+                    <strong>Check out my full portfolio on the Play Store:</strong><br>
+                    <a href="https://www.google.com/search?q=https://play.google.com/store/apps/developer%3Fid%3Dni18">Google
+                        Play Store Profile: ni18</a>
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="../">View all posts</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

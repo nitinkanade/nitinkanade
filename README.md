@@ -1,158 +1,148 @@
-# Hi, I’m Nitin Kanade 👋  
-### Senior Salesforce Commerce Cloud (SFCC) Developer | eCommerce Specialist | Indie Tool Builder
+# Nitin Kanade
+### Senior Salesforce Commerce Cloud Developer · eCommerce Specialist · Indie Tool Builder
 
-🚀 SFCC Certified Developer with **3+ years of hands-on experience** building scalable, high-performance eCommerce solutions using **Salesforce Commerce Cloud (SFRA)**.
-
-Alongside my professional work, I actively run **independent tech platforms** focused on **blogs, SEO, and free online tools** used by real users.
-
----
-
-## 👨‍💻 About Me
-
-- 💼 **Senior SFCC Developer** at *Appendd Digital Solutions* (Pune, India)
-- 🛒 Strong expertise in **SFRA architecture & customization**
-- 🔌 Experienced with **OCAPI / SCAPI / Services**
-- 💳 Payment integrations: **CyberSource, CC Avenue, Razorpay**
-- 📊 Analytics & SEO: **Google Tag Manager (GTM), UET, SEO optimization**
-- 🧠 Tech enthusiast who enjoys **building real-world tools**
-- ✍️ Blogger & indie developer with production apps and live users
+📍 Pune, Maharashtra, India
+📧 [nitinkanade027@gmail.com](mailto:nitinkanade027@gmail.com)
+📞 +91 9130230077
+💼 [linkedin.com/in/nitinkanade1](https://www.linkedin.com/in/nitinkanade1)
+🌐 [blog.ni18.in](https://blog.ni18.in/) · [online-tools.ni18.in](https://online-tools.ni18.in/)
 
 ---
 
-## 🛠️ Tech Stack
+## 🧭 Professional Summary
 
-**Salesforce Commerce Cloud**
-- SFCC (SFRA)
-- Business Manager
-- OCAPI & SCAPI
-- ISML, Controllers, Jobs, Services
-- Content Assets & Slots
+**Salesforce Certified B2C Commerce Developer** with **5+ years of experience** designing and delivering scalable eCommerce solutions on Salesforce Commerce Cloud. Deep expertise in **SFRA architecture**, custom cartridge development, third-party integrations, and API-driven workflows (OCAPI/SCAPI). Successfully shipped projects across cookware, beverage, furniture, and health verticals — with recent hands-on experience building **AI-powered commerce tools** using **Salesforce Agentforce**.
 
-**Frontend**
-- JavaScript (ES6+)
-- React
-- jQuery
-- AJAX
-- HTML, CSS
-
-**Backend & Integrations**
-- Java (Core & Advanced)
-- Payment Gateways (CyberSource, CC Avenue, Razorpay)
-- Avalara Tax
-- Loop Returns
-- Google Maps API
-- reCAPTCHA
-
-**Analytics & Tools**
-- Google Tag Manager (GTM)
-- SEO Optimization
-- Universal Event Tracking (UET)
+Alongside professional work, independently operates a **tech blog** and a **free online tools platform** with real users — driven by a passion for clean code, performance, and meaningful product experiences.
 
 ---
 
-## 🚀 Side Hustle & Indie Projects
+## 🛠️ Technical Skills
 
-### 📝 Tech Blog  
-🔗 **https://blog.ni18.in/**
-
-- Write **in-depth technical blogs** on:
-  - Salesforce Commerce Cloud (SFCC)
-  - JavaScript & modern web development
-  - eCommerce performance & integrations
-- Focus on **SEO-optimized, beginner-friendly content**
-- Several articles rank on Google for competitive tech keywords
-
----
-
-### 🧰 Free Online Tools Platform  
-🔗 **https://online-tools.ni18.in/**
-
-A growing collection of **fast, serverless, browser-based tools**, built for developers, creators, and everyday users.
-
-**Highlights:**
-- ⚡ Runs fully on client-side (no backend)
-- 🔐 No login required
-- 📱 Mobile-friendly & SEO optimized
-- 🎯 Designed for high performance and accessibility
-
-Examples include:
-- AI-based tools
-- File converters
-- Utility & productivity tools
-- SEO-friendly web apps
-
-> This platform also helps me experiment with **UX, performance, SEO, and monetization strategies**.
+| Domain | Technologies |
+|---|---|
+| **SFCC Platform** | SFRA, Business Manager, Content Assets & Slots, Services Framework |
+| **Languages** | JavaScript (ES6+), ISML, XML, Java, HTML5, CSS3 |
+| **Frameworks** | React, jQuery, AJAX, Angular, AngularJS, Ionic |
+| **APIs & Integrations** | OCAPI, SCAPI, Agentforce APIs, Loop Return API, Google Maps API |
+| **Payments** | CyberSource, CC Avenue, Razorpay, Apple Pay, PayPal |
+| **Backend** | Java Spring Boot, MySQL |
+| **Analytics & Tools** | Google Tag Manager (GTM), Avalara Tax, Universal Event Tracking (UET), Git |
 
 ---
 
-## 🧩 Professional Experience
+## 💼 Professional Experience
 
-### **SFCC Developer**  
-**Appendd Digital Solutions — Pune, India**  
+### Senior SFCC Developer
+**Appendd Digital Solutions** · Pune, MH, India
 📅 *March 2022 – Present*
 
-#### 🔹 Key Projects & Contributions
+Delivered end-to-end SFCC development across **5+ enterprise projects**, spanning new feature development, third-party integrations, and ongoing platform enhancements.
 
-**🤖 Business Manager AI Agent**
-- Built an AI agent using **Salesforce Agentforce APIs**
-- Custom Business Manager UI & merchant interactions
-- Enables queries for inventory, orders, products, and preferences
+---
 
-**🍳 Cookware eCommerce Platform**
-- Order processing jobs using **CyberSource Decision Manager**
-- Upgraded **Avalara Tax Cartridge**
-- Integrated **Google reCAPTCHA** to prevent DDoS attacks
-- Fixed Apple Pay & PayPal address issues
-- Implemented **UET tracking via GTM**
+#### 🤖 Business Manager AI Agent *(Agentforce)*
+- Built an AI-powered Business Manager agent **from scratch** using Salesforce Agentforce APIs, enabling merchants to query inventory, orders, and product data via natural language.
+- Designed a custom Business Manager UI to surface agent interactions, **reducing manual lookup time** across catalog and order workflows.
 
-**🔁 Loop Return – Custom Cartridge**
-- Scheduled jobs for Product, Inventory, Catalog & Order exports
-- Return & exchange processing using **OCAPI**
-- Automated exchange order creation
+---
 
-**🥤 Beverage eCommerce Website**
-- Built **Single Page Checkout**
-- Integrated **CC Avenue**
-- Location-based inventory management
-- “Buy Now” flow using temporary basket
+#### 🍳 Cookware eCommerce Platform
+- Developed an automated job to reconcile order payment statuses against **CyberSource Decision Manager** responses, eliminating manual reconciliation effort.
+- Upgraded the **Avalara Tax Cartridge** to the latest version, ensuring compliance and reducing tax calculation errors.
+- Integrated **Google reCAPTCHA** at checkout to block bot traffic and DDoS attempts.
+- Fixed address-handling bugs for **Apple Pay & PayPal**, improving payment success rates at checkout.
+- Configured **Universal Event Tracking (UET)** tags in GTM for accurate conversion tracking and retargeting.
 
-**💊 Multivitamin Store**
-- Single Page Checkout
-- Integrated **Razorpay**
-- Full GTM analytics setup
+---
 
-**🛋️ Furniture eCommerce Project**
-- Wishlist caching fix on PLP
-- Custom search refinements
-- Cart & promotion customization
-- PDP enhancements (badges, recommendations)
+#### 🔁 Loop Return Integration — Custom Link Cartridge
+- Built a custom SFCC Link Cartridge to integrate Loop Return services, automating **Product, Inventory, Catalog, and Order Export** via scheduled jobs.
+- Implemented return and exchange processing using **OCAPI** to programmatically create exchange orders, streamlining the post-purchase experience.
+
+---
+
+#### 🥤 Beverage eCommerce Platform
+- Designed a **Single Page Checkout** consolidating Shipping, Billing, and Payment into one AJAX call with full validation — reducing checkout steps and improving conversion.
+- Integrated **CC Avenue Payment Gateway** end-to-end for secure regional payment processing.
+- Built **location-based inventory management** to display accurate stock availability by delivery region.
+- Developed a **'Buy Now'** feature using a temporary basket, enabling express purchases from the PDP without affecting the main cart.
+
+---
+
+#### 💊 Multivitamin / Health Products eCommerce
+- Delivered a **Single Page Checkout** experience to reduce cart abandonment.
+- Integrated **Razorpay** for secure INR transactions with webhook-based order confirmation.
+- Implemented GTM tracking for purchase, add-to-cart, and product impression events.
+
+---
+
+#### 🛋️ Furniture eCommerce Platform
+- Resolved a caching defect affecting **Wishlist icon state** on the PLP, ensuring accurate display for authenticated users.
+- Implemented **custom PLP search refinements** to improve product filtering and discoverability.
+- Enhanced the Cart page with improved promotions display and line-item management.
+- Customized the PDP with **product recommendations, badges**, and brand-aligned UI updates.
+
+---
+
+### Software Developer
+**Varank Tech Private Limited** · Mumbai, MH, India
+📅 *July 2020 – December 2021*
+
+#### ✈️ Online Ticket Booking — Web Application
+*Tech: Java Spring Boot · AngularJS · MySQL*
+
+- Designed and developed the **Flight Ancillary module**, enabling upsell of travel add-ons at booking.
+- Built dynamic **invoice generation flow** with configurable template modifications.
+- Implemented **Iqama details handling** for passengers, meeting Saudi Arabia regional compliance requirements.
+- Developed **pre-booking validation logic** to prevent invalid itinerary submissions.
+- Resolved cart pricing, ad hoc markup, and discount calculation bugs.
+- Designed a **Dynamic Landing Page** to support marketing campaigns.
+
+#### 📱 Online Ticket Booking — Mobile Application
+*Tech: Ionic Framework · Angular 8*
+
+- Customized the user registration page to align with **mobile UX best practices**.
+- Extended Flight Ancillary module customizations to the mobile platform.
+- Implemented pre-booking validation and resolved multiple stability bugs.
+
+---
+
+## 🚀 Indie Projects
+
+### 📝 Tech Blog — [blog.ni18.in](https://blog.ni18.in/)
+- Writes **SEO-optimized, in-depth technical articles** on SFCC, JavaScript, and eCommerce performance.
+- Several articles rank on Google for **competitive tech keywords**.
+- Focused on beginner-friendly, actionable content for developers.
+
+### 🧰 Free Online Tools — [online-tools.ni18.in](https://online-tools.ni18.in/)
+- A growing collection of **fast, serverless, browser-based tools** for developers, creators, and everyday users.
+- Fully client-side · No login required · Mobile-friendly · SEO optimized.
+- Includes AI-based tools, file converters, utility & productivity apps.
+- Used as a live sandbox for experimenting with **UX, performance, SEO, and monetization strategies**.
 
 ---
 
 ## 🎓 Education
 
-- **PG-DAC (CDAC)** — MET CDAC, Mumbai *(2019–2020)*
-- **B.E. Mechanical Engineering** — SRTMUN *(2014–2019)*
+**Post Graduate Diploma in Advanced Computing (PG-DAC)**
+CDAC — MET CDAC, Mumbai · *2019 – 2020*
+
+**Bachelor of Engineering — Mechanical Engineering**
+Swami Ramanand Teertha Marathwada University (SRTMUN) · *2014 – 2019*
 
 ---
 
-## 🧠 Interests
+## 🏅 Certifications
 
-- Exploring **new SFCC & eCommerce technologies**
-- Writing **technical blogs**
-- Building **useful web tools**
-- Playing **Chess, Box Cricket, and Badminton**
+- 🎖️ **Salesforce Certified B2C Commerce Developer** — Salesforce
 
 ---
 
-## 📬 Connect With Me
+## 🎯 Interests
 
-- 📧 Email: **nitinkanade027@gmail.com**
-- 💼 LinkedIn: https://www.linkedin.com/in/nitinkanade1
-- 🌐 Blog: https://blog.ni18.in/
-- 🧰 Tools: https://online-tools.ni18.in/
-- 📍 Pune, Maharashtra, India
+Chess · Badminton · Box Cricket · Technical Blogging · SFCC & eCommerce Innovation · Building Developer Tools
 
 ---
 
-⭐ *If you like my work, consider starring my repositories!*  
+*⭐ Open to exciting SFCC opportunities, collaborations, and freelance engagements.*

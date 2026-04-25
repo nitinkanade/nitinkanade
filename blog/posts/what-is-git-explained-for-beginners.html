@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Is Git? The Simple, Honest Explanation Every Beginner Actually Needs | Nitin Kanade</title>
+    <meta name="description"
+        content="Never understood Git? This beginner-friendly guide explains Git in plain English — commits, branches, GitHub, and real examples. Learn Git the easy way.">
+    <meta name="keywords" content="Git, GitHub, Version Control, Beginner Guide">
+    <meta name="author" content="Nitin Kanade">
+    <link rel="canonical" href="https://nitinkanade.github.io/nitinkanade/blog/posts/what-is-git-explained-for-beginners.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="../../images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../../images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../../images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../../images/favicon/site.webmanifest" />
+
+    <style>
+        :root {
+            --primary-color: #0070d2;
+            --secondary-color: #0f172a;
+            --text-color: #334155;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --container-width: 800px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            padding: 20px 0;
+            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 40px;
+        }
+
+        .nav-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+
+        article {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .meta {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+        }
+
+        .content h1, .content h2, .content h3 {
+            color: var(--secondary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .content ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+        }
+
+        .content pre {
+            background: #f1f5f9;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
+        .content code {
+            font-family: monospace;
+            background: #f1f5f9;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-flex">
+            <a href="../" class="logo">← Back to Blog</a>
+            <a href="../../">Home</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <article>
+            <header style="background: none; padding: 0; box-shadow: none; border: none; margin-bottom: 20px;">
+                <div class="meta">Published on February 20, 2026 • By Nitin Kanade</div>
+            </header>
+
+            <div class="content">
+<h1>What Is Git? The Simple, Honest Explanation Every Beginner Actually Needs</h1>
+<p>You've heard the word Git thrown around everywhere — in YouTube tutorials, job descriptions, coding bootcamps, and GitHub profiles. But every explanation you find is either too technical or assumes you already kind of know what it is.</p>
+<p>So let's fix that. <strong>Git</strong> is one of the most important tools in all of programming, and once it clicks, you'll wonder how anyone codes without it. This guide breaks it down from scratch — no CS degree required, no jargon left unexplained.</p>
+<p>Let's get into it.</p>
+<hr />
+<h2>What Is Git? (The Simple Version Nobody Gives You)</h2>
+<p>Here's the thing most tutorials skip: Git isn't complicated. The <em>vocabulary</em> around Git is complicated. Git itself? It's basically a save system for your code.</p>
+<p>Think about video games. Every time you reach a checkpoint, the game saves your progress. If you mess up, you go back to the last checkpoint. You don't lose everything. You just restart from where things were still okay.</p>
+<p><strong>Git does the exact same thing for your code.</strong></p>
+<p>It lets you save "checkpoints" (called <strong>commits</strong>) as you work on a project. If you break something, you can roll back to an earlier version. If you want to try something risky without ruining your main project, you can branch off and experiment. And if you're working with a team, Git helps everyone merge their changes without stepping on each other's work.</p>
+<p>Git was created in 2005 by <strong>Linus Torvalds</strong> — the same person who created Linux. As of 2026, Git is used by over 90% of professional developers worldwide. It's not a trend. It's the standard.</p>
+<hr />
+<h2>Why Do You Even Need Git? (Real Talk)</h2>
+<p>Imagine you're working on a school project. You've been editing a Google Doc for three weeks. One day, you accidentally delete half of it and save. The doc auto-saves. It's gone.</p>
+<p>Now imagine that never happens. Imagine you could literally press a button and see every version of that doc, going back to day one. You could compare today's version to last week's. You could bring back deleted sections. You could have your friend edit their part while you edit yours, and the doc merges both changes automatically.</p>
+<p>That's Git.</p>
+<p>Here's what Git protects you from in real projects:</p>
+<ul>
+<li>Accidentally deleting code you needed</li>
+<li>Overwriting a teammate's work</li>
+<li>Not knowing what changed between "it worked" and "it's broken"</li>
+<li>Losing days of work to a laptop crash (if you're also using remote hosting)</li>
+</ul>
+<p>Sound familiar? Yeah. Git solves all of this.</p>
+<hr />
+<h2>How Git Actually Works — The Core Concepts Explained Simply</h2>
+<p>Let's walk through the building blocks. These are the concepts every beginner needs to understand before writing a single Git command.</p>
+<h3>The Repository (Your Project's Home Base)</h3>
+<p>A <strong>repository</strong> (or "repo") is just a folder that Git is tracking. When you tell Git to watch a folder, it creates a hidden <code>.git</code> folder inside it. That hidden folder is where Git stores all the history, all the checkpoints, and all the branch info.</p>
+<p>Think of it like this: your project folder is a regular notebook. The <code>.git</code> folder is the invisible sticky note on the back cover that says "here's every version of every page this notebook has ever had."</p>
+<p>You can have a <strong>local repository</strong> (on your computer) or a <strong>remote repository</strong> (on a server like GitHub). Usually, you have both — your local copy is where you work, and the remote copy is your backup and your team's shared version.</p>
+<h3>Commits — The Checkpoints That Save Your Progress</h3>
+<p>A <strong>commit</strong> is a snapshot of your project at a specific moment in time. Every time you make meaningful progress — you finish a feature, fix a bug, write a new function — you make a commit.</p>
+<p>Each commit includes:
+- A <strong>message</strong> (what you changed and why)
+- A <strong>timestamp</strong> (when you made the change)
+- A <strong>unique ID</strong> (a long string like <code>a3f9c12...</code>) so Git can track it precisely</p>
+<p>Here's an analogy. Imagine you're building a LEGO spaceship. Every time you finish a section — the cockpit, the engine, the wings — you take a photo. If something breaks later, you've got photos to refer back to and rebuild from. Commits are those photos.</p>
+<h3>Branches — Where the Real Magic Happens</h3>
+<p>A <strong>branch</strong> is a separate version of your project where you can make changes without affecting the main project.</p>
+<p>Every Git project starts with a default branch. In 2020, GitHub changed the default name from <code>master</code> to <code>main</code>. So when you create a new repo today, your main branch is called <code>main</code>.</p>
+<p>Here's why branches matter: say your project's main codebase is working perfectly. A user can sign up, log in, and use your app. Now you want to build a new "dark mode" feature. You don't want to mess up the working app while you experiment.</p>
+<p>So you create a branch called <code>dark-mode</code>. You build the feature there. The main branch stays untouched. When dark mode is ready and tested, you <strong>merge</strong> it back into main.</p>
+<p>It's like writing a rough draft on a separate piece of paper before copying the final version into your notebook.</p>
+<h3>Staging — The Step Before Committing</h3>
+<p>This one confuses a lot of beginners. There's a step between "editing your files" and "committing your changes." That step is called <strong>staging</strong> (or the <strong>staging area</strong>).</p>
+<p>The staging area is like a loading dock. You pick exactly which changes you want to include in your next commit, and you "stage" them. Then you commit everything in the staging area at once.</p>
+<p>Why does this exist? Because sometimes you've changed five files, but you only want three of them in the next commit. Staging gives you that control.</p>
+<hr />
+<h2>Git vs GitHub — These Are NOT the Same Thing</h2>
+<p>This is probably the most common confusion among beginners. Let's clear it up once and for all.</p>
+
+<table border="1" cellpadding="5" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Git</th>
+            <th>GitHub</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>What it is</strong></td>
+            <td>A tool (software)</td>
+            <td>A website (platform)</td>
+        </tr>
+        <tr>
+            <td><strong>Where it runs</strong></td>
+            <td>On your computer</td>
+            <td>On the internet</td>
+        </tr>
+        <tr>
+            <td><strong>Who made it</strong></td>
+            <td>Linus Torvalds (2005)</td>
+            <td>GitHub Inc. (2008), now owned by Microsoft</td>
+        </tr>
+        <tr>
+            <td><strong>What it does</strong></td>
+            <td>Tracks your code history</td>
+            <td>Hosts your repos online and enables collaboration</td>
+        </tr>
+        <tr>
+            <td><strong>Can you use one without the other?</strong></td>
+            <td>Yes</td>
+            <td>Yes</td>
+        </tr>
+    </tbody>
+</table>
+
+<p><strong>Git</strong> is the engine. It runs locally on your machine. You can use Git with zero internet connection.</p>
+<p><strong>GitHub</strong> is a website that stores your Git repositories in the cloud. It adds features like pull requests, issues, code review, and team collaboration.</p>
+<p>Other platforms that do what GitHub does: <strong>GitLab</strong> and <strong>Bitbucket</strong>. Different companies, same concept.</p>
+<p>Here's the real-world version: Git is like Microsoft Word — it's the actual software you use. GitHub is like Google Drive — it's where you store and share your Word documents.</p>
+<hr />
+<h2>The Most Important Git Commands (Explained Like You're 15)</h2>
+<p>You don't need to memorize every Git command. You need to know the core ones and understand what they actually do. Here they are — no fluff.</p>
+<h3>Setting Up Git</h3>
+<p>Before anything else, you tell Git who you are:</p>
+<pre><code>git config --global user.name "Your Name"
+git config --global user.email "you@example.com"</code></pre>
+<p>This is like signing your work. Every commit you make will show your name and email.</p>
+<h3>Starting a Project</h3>
+<pre><code>git init</code></pre>
+<p>This turns a regular folder into a Git repository. Run this once inside your project folder. You'll see a <code>.git</code> folder appear (it's hidden by default).</p>
+<pre><code>git clone &lt;url&gt;</code></pre>
+<p>This copies an existing remote repo to your computer. For example, cloning a GitHub repo downloads the whole project — including all its history — to your machine.</p>
+<h3>The Daily Workflow Commands</h3>
+<p>These are the commands you'll use every single day:</p>
+<p><strong>1. Check what's changed:</strong>
+<code>git status</code>
+Shows you which files have been modified, which are staged, and which are untracked. Run this constantly. It's your north star.</p>
+<p><strong>2. Stage your changes:</strong>
+<code>git add filename.js</code>
+Or to stage everything at once:
+<code>git add .</code></p>
+<p><strong>3. Commit your staged changes:</strong>
+<code>git commit -m "Add login button to homepage"</code>
+The <code>-m</code> flag lets you write your commit message inline. Always write clear, specific commit messages. "Fixed stuff" is useless. "Fix typo in email validation regex" is gold.</p>
+<p><strong>4. Pull the latest changes:</strong>
+<code>git pull origin main</code>
+This downloads and merges the latest changes from the remote. If your teammate just added new code, you run this to get it.</p>
+<h3>Branch Commands</h3>
+<p><code>git branch feature-login</code>
+Creates a new branch called <code>feature-login</code>.</p>
+<p><code>git checkout feature-login</code>
+Switches to that branch. (In newer Git versions, <code>git switch feature-login</code> does the same thing.)</p>
+<p><code>git merge feature-login</code>
+Merges the <code>feature-login</code> branch into whichever branch you're currently on.</p>
+<hr />
+<h2>A Real Example: Building a School Project With Git</h2>
+<p>Let's make this concrete. You and your friend are building a simple website together for your school science fair.</p>
+<p><strong>Step 1:</strong> You create the project folder and run <code>git init</code>.</p>
+<p><strong>Step 2:</strong> You create <code>index.html</code> and add some basic HTML. You run <code>git add .</code> and <code>git commit -m "Initial homepage structure"</code>. First checkpoint saved.</p>
+<p><strong>Step 3:</strong> Your friend wants to add a contact form. You don't want that in the main branch yet — it's not ready. So your friend runs <code>git checkout -b contact-form</code>. They build the form there.</p>
+<p><strong>Step 4:</strong> You, meanwhile, keep working on <code>main</code>. You add CSS styling. <code>git commit -m "Add responsive styles for mobile"</code>.</p>
+<p><strong>Step 5:</strong> Your friend finishes the contact form. You review it together. It looks good. You merge it: <code>git merge contact-form</code>.</p>
+<p>That's Git in a real-world flow. And honestly, once you get used to it, working without it feels terrifying.</p>
+<hr />
+<h2>Common Git Mistakes Beginners Make (And How to Avoid Them)</h2>
+<p>Here's what most beginner guides won't tell you: Git has a learning curve not because it's hard, but because most people don't understand the <em>why</em> behind the commands. These are the mistakes that trip everyone up.</p>
+<h3>Writing Vague Commit Messages</h3>
+<p>Bad: <code>git commit -m "changes"</code>
+Good: <code>git commit -m "Fix broken navigation menu on mobile screens"</code></p>
+<p>Your future self will thank you. So will your teammates.</p>
+<h3>Committing Directly to Main</h3>
+<p>This trips up beginners who don't understand branching yet. Committing experimental or unfinished code directly to <code>main</code> is risky — especially on team projects. Get into the habit of creating a branch for every new feature or fix.</p>
+<h3>Not Using <code>.gitignore</code></h3>
+<p>A <code>.gitignore</code> file tells Git which files to ignore — like your <code>node_modules</code> folder, environment variables, or API keys. Never commit API keys to a public repo. It's a security nightmare that's happened to a lot of developers, and it's entirely avoidable.</p>
+<hr />
+<h2>Git Best Practices That Separate Beginners From Pros</h2>
+<p>You'll get a lot of mileage out of these habits early on:</p>
+<ul>
+<li><strong>Commit often.</strong> Small, frequent commits are better than one massive commit at the end of the day. They're easier to review, easier to roll back, and easier to understand.</li>
+<li><strong>One commit = one logical change.</strong> Don't mix "fix login bug" and "redesign homepage" in the same commit. Keep them separate.</li>
+<li><strong>Write commit messages in the imperative tense.</strong> "Add feature" not "Added feature" or "Adding feature." Git's own documentation uses this convention.</li>
+<li><strong>Use branches for everything.</strong> Even if you're working alone, branches keep your work organized and your main branch stable.</li>
+<li><strong>Review <code>git status</code> and <code>git log</code> often.</strong> <code>git log</code> shows you a history of all commits on the current branch. It's your paper trail.</li>
+</ul>
+<hr />
+<h2>Understanding Merge Conflicts (The Part That Scares Everyone)</h2>
+<p>A <strong>merge conflict</strong> happens when two people change the same line of the same file in different branches, and Git doesn't know which version to keep. It flags the file and asks you to decide manually.</p>
+<p>It looks like this inside the file:</p>
+<p>```
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+This is my version of the line.
+=======
+This is my teammate's version of the line.</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>feature-branch
+```</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>You delete the markers, keep the version (or combination) you want, then commit. It's annoying the first time. By the tenth time, it takes about 30 seconds.</p>
+<p>Merge conflicts aren't Git failures. They're Git doing exactly what it should — flagging an ambiguity so a human can make the call.</p>
+<hr />
+<h2>Wrapping Up — You Actually Understand Git Now</h2>
+<p>Let's be real — Git has a reputation for being scary, and that reputation is mostly undeserved. The commands look cryptic at first. The error messages are sometimes unhelpful. And merging two branches that conflict can feel like defusing a bomb the first time.</p>
+<p>But the core idea? It's just a save system. A very powerful, very smart save system that millions of developers rely on every single day.</p>
+<p>Here's what you now know:</p>
+<ul>
+<li><strong>Git is version control</strong> — it tracks changes to your code over time</li>
+<li><strong>Commits are checkpoints</strong> — save your progress at meaningful moments</li>
+<li><strong>Branches let you experiment</strong> — without touching your working main project</li>
+<li><strong>Git and GitHub are different</strong> — Git is the tool, GitHub is the hosting platform</li>
+<li><strong>Merge conflicts are normal</strong> — not a crisis, just a decision to make</li>
+</ul>
+
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <a href="../">View all posts</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

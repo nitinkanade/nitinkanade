@@ -8,9 +8,15 @@
   </url>
   <url>
     <loc>https://nitinkanade.github.io/nitinkanade/blog/</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nitinkanade.github.io/nitinkanade/blog/posts/what-is-git-explained-for-beginners.html</loc>
+    <lastmod>2026-02-20</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://nitinkanade.github.io/nitinkanade/blog/posts/welcome-to-my-blog.html</loc>

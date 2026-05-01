@@ -4,12 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | Nitin Kanade</title>
+    <title>Tech Blog | Nitin Kanade — SFCC, JavaScript & Indie Hacking</title>
     <meta name="description"
-        content="Technical blog by Nitin Kanade about Salesforce Commerce Cloud, Web Development, and Indie Hacking.">
-    <meta name="keywords" content="Nitin Kanade Blog, SFCC Blog, Web Development, JavaScript, Indie Hacker">
+        content="In-depth technical articles on Salesforce Commerce Cloud (SFCC), JavaScript, web development, and indie hacking — written by Senior SFCC Developer Nitin Kanade.">
+    <meta name="keywords" content="Nitin Kanade Blog, SFCC Blog, Salesforce Commerce Cloud, SFRA, JavaScript, Web Development, Indie Hacker, Git Tutorial">
     <meta name="author" content="Nitin Kanade">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="https://nitinkanade.github.io/nitinkanade/blog/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Nitin Kanade">
+    <meta property="og:title" content="Tech Blog | Nitin Kanade — SFCC, JavaScript & Indie Hacking">
+    <meta property="og:description" content="In-depth technical articles on Salesforce Commerce Cloud, JavaScript, and indie hacking by Nitin Kanade.">
+    <meta property="og:url" content="https://nitinkanade.github.io/nitinkanade/blog/">
+    <meta property="og:image" content="https://nitinkanade.github.io/nitinkanade/images/favicon/web-app-manifest-512x512.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tech Blog | Nitin Kanade — SFCC, JavaScript & Indie Hacking">
+    <meta name="twitter:description" content="In-depth technical articles on Salesforce Commerce Cloud, JavaScript, and indie hacking.">
+    <meta name="twitter:image" content="https://nitinkanade.github.io/nitinkanade/images/favicon/web-app-manifest-512x512.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,32 +40,64 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Blog",
-      "name": "Nitin Kanade's Blog",
-      "description": "Technical blog by Nitin Kanade about Salesforce Commerce Cloud, Web Development, and Indie Hacking.",
-      "url": "https://nitinkanade.github.io/nitinkanade/blog/",
-      "author": {
-        "@type": "Person",
-        "name": "Nitin Kanade"
-      },
-      "blogPost": [
+      "@graph": [
         {
-          "@type": "BlogPosting",
-          "headline": "What Is Git? The Simple, Honest Explanation Every Beginner Actually Needs",
-          "url": "https://nitinkanade.github.io/nitinkanade/blog/posts/what-is-git-explained-for-beginners.html",
-          "datePublished": "2026-02-20"
+          "@type": "Blog",
+          "@id": "https://nitinkanade.github.io/nitinkanade/blog/#blog",
+          "name": "Nitin Kanade's Tech Blog",
+          "description": "In-depth technical articles on Salesforce Commerce Cloud, JavaScript, and indie hacking.",
+          "url": "https://nitinkanade.github.io/nitinkanade/blog/",
+          "inLanguage": "en-US",
+          "author": {
+            "@type": "Person",
+            "name": "Nitin Kanade",
+            "url": "https://nitinkanade.github.io/nitinkanade/"
+          },
+          "publisher": {
+            "@type": "Person",
+            "name": "Nitin Kanade",
+            "url": "https://nitinkanade.github.io/nitinkanade/"
+          },
+          "blogPost": [
+            {
+              "@type": "BlogPosting",
+              "headline": "What Is Git? The Simple, Honest Explanation Every Beginner Actually Needs",
+              "url": "https://nitinkanade.github.io/nitinkanade/blog/posts/what-is-git-explained-for-beginners.html",
+              "datePublished": "2026-02-20",
+              "author": { "@type": "Person", "name": "Nitin Kanade" }
+            },
+            {
+              "@type": "BlogPosting",
+              "headline": "My Side Hustle: Building the ni18 Ecosystem",
+              "url": "https://nitinkanade.github.io/nitinkanade/blog/posts/my-side-hustle-ni18-apps.html",
+              "datePublished": "2026-02-01",
+              "author": { "@type": "Person", "name": "Nitin Kanade" }
+            },
+            {
+              "@type": "BlogPosting",
+              "headline": "Welcome to My New Blog",
+              "url": "https://nitinkanade.github.io/nitinkanade/blog/posts/welcome-to-my-blog.html",
+              "datePublished": "2026-01-17",
+              "author": { "@type": "Person", "name": "Nitin Kanade" }
+            }
+          ]
         },
         {
-          "@type": "BlogPosting",
-          "headline": "My Side Hustle: Building the ni18 Ecosystem",
-          "url": "https://nitinkanade.github.io/nitinkanade/blog/posts/my-side-hustle-ni18-apps.html",
-          "datePublished": "2026-02-01"
-        },
-        {
-          "@type": "BlogPosting",
-          "headline": "Welcome to My New Blog",
-          "url": "https://nitinkanade.github.io/nitinkanade/blog/posts/welcome-to-my-blog.html",
-          "datePublished": "2026-01-17"
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://nitinkanade.github.io/nitinkanade/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": "https://nitinkanade.github.io/nitinkanade/blog/"
+            }
+          ]
         }
       ]
     }
@@ -217,17 +265,17 @@
     <header>
         <div class="container nav-flex">
             <a href="../" class="logo">Nitin Kanade</a>
-            <nav>
+            <nav aria-label="Primary">
                 <a href="../" style="margin-right: 20px;">Home</a>
-                <a href="#">Blog</a>
+                <a href="./" aria-current="page">Blog</a>
             </nav>
         </div>
     </header>
 
     <main class="container">
         <section class="section">
-            <h1 class="section-title">Latest Articles</h1>
-            <p>Thoughts on functionality, design, and code.</p>
+            <h1 class="section-title">Tech Blog by Nitin Kanade</h1>
+            <p>In-depth articles on Salesforce Commerce Cloud (SFCC), JavaScript, and indie hacking — written from real-world enterprise eCommerce work.</p>
 
             <div class="blog-grid">
                 <!-- Blog Post 3 -->
